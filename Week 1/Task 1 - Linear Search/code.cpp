@@ -7,7 +7,7 @@ int main()
 	
 	while(t--)
 	{
-		int count=1,n=0;
+		int count=0,n=0,flag=1;
 		cin>>n;
 		int arr[n];
 		for(int i=0;i<n;i++)
@@ -20,13 +20,14 @@ int main()
 		{
 			if(arr[j]==checknum)
 			{
-				cout<<"Present "<<count;
+				cout<<"Present "<<flag;
+				count++;
 			}
-			count=count+1;
+			flag++;
 		}
-		if((count-1)==n)
+		if(count==0)
 		{
-			cout<<"Not Present "<<(count-1);
+			cout<<"Not Present "<<n;
 		}
 	}
 }
