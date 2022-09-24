@@ -1,0 +1,2 @@
+/* Program to Implement Linear Search Method and also find
+Total No of Comparisons.*/
